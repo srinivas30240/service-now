@@ -1,6 +1,6 @@
  name: Retrieve Ticket
   uri:
-    url: "https://{{ snow_instance }}/api/now/table/incident/{{ Object ID }}"
+    url: "https://dev165804.service-now.com//api/now/table/incident/{{ Object ID }}"
     method: GET
     headers:
       Accept: "application/json"

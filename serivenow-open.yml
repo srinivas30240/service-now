@@ -1,0 +1,10 @@
+ name: Retrieve Ticket
+  uri:
+    url: "https://{{ snow_instance }}/api/now/table/incident/{{ ticket_number }}"
+    method: GET
+    headers:
+      Accept: "application/json"
+    user: "{{ snow_user }}"
+    password: "{{ snow_password }}"
+    validate_certs: no
+  register: snow_ticket
